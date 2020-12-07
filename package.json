@@ -1,10 +1,38 @@
 {
   "name": "eslint-config-rschristian",
   "version": "0.1.0",
+  "source": "index.js",
+  "main": "dist/eslint-config-rschristian.js",
+  "module": "dist/eslint-config-rschristian.module.js",
+  "exports": {
+    ".": {
+      "import": "./dist/eslint-config-rschristian.module.js",
+      "require": "./dist/eslint-config-rschristian.js"
+    }
+  },
+  "license": "MIT",
   "description": "Personal ESLint configuration",
-  "main": "index.js",
   "repository": "https://github.com/rschristian/eslint-config-rschristian.git",
   "author": "Ryan Christian <rschristian@ryanchristian.dev>",
-  "license": "MIT",
-  "private": false
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "microbundle -f es,cjs --target node --no-sourcemap index.js"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint-config-preact": "^1.1.3",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.2.0"
+  },
+  "devDependencies": {
+
+    "eslint": "^7.15.0",
+    "microbundle": "^0.12.4"
+  }
 }
