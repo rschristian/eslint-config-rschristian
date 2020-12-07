@@ -1,0 +1,10 @@
+{
+  "name": "eslint-config-rschristian",
+  "version": "0.1.0",
+  "description": "Personal ESLint configuration",
+  "main": "index.js",
+  "repository": "https://github.com/rschristian/eslint-config-rschristian.git",
+  "author": "Ryan Christian <rschristian@ryanchristian.dev>",
+  "license": "MIT",
+  "private": false
+}
