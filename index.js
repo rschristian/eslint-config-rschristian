@@ -13,7 +13,6 @@ export default {
         },
     },
     rules: {
-        'react/no-unknown-property': ['error', { ignore: ['class'] }],
         '@typescript-eslint/quotes': ['warn', 'single', { avoidEscape: true }],
         '@typescript-eslint/interface-name-prefix': 'off',
     },
