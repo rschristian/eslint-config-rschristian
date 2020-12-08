@@ -14,6 +14,14 @@
   "description": "Personal ESLint configuration",
   "repository": "https://github.com/rschristian/eslint-config-rschristian.git",
   "author": "Ryan Christian <rschristian@ryanchristian.dev>",
+  "keywords": [
+    "eslint",
+    "config",
+    "preact",
+    "typescript",
+    "react-hooks",
+    "prettier"
+  ],
   "files": [
     "dist",
     "LICENSE",
@@ -21,7 +29,10 @@
     "README.md"
   ],
   "scripts": {
-    "build": "microbundle -f es,cjs --target node --no-sourcemap index.js"
+    "build": "microbundle -f es,cjs --target node --no-sourcemap --compress index.js"
+  },
+  "peerDependencies": {
+    "eslint": "6.x || 7.x"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.0",
